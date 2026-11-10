@@ -18,7 +18,6 @@ function html() {
         .pipe(browserSync.stream());
 }
 
-//  css scss
 function styles() {
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
@@ -27,7 +26,6 @@ function styles() {
         .pipe(browserSync.stream());
 }
 
-// 3. js
 function scripts() {
     return gulp.src('src/js/**/*.js')
         .pipe(concat('main.min.js'))
@@ -42,7 +40,6 @@ function images() {
         .pipe(gulp.dest('dist/imgs'));
 }
 
-// BrowserSyncr і watcher
 function serve() {
     browserSync.init({
         server: {
