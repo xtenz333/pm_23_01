@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp Lab 1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    @@include('app/components/_header.html')
+    <div style="display: flex; flex-direction: column; gap: 20px; padding: 20px;">
+          @@include('app/components/_sidebar.html')   
+    </div>
+    <script src="js/main.min.js"></script>
+        <main style=" background: rgba(255, 255, 255, 0.151); 
+            padding: 20px 30px; 
+            border-radius: 15px;  
+            text-align: center;">
+           <h2 style="font-weight: bold; font-size: 1.8em;">Мальок</h2>
+            <p style="font-weight: bold; font-size: 1.5em;">Чемпіон</p>
+            <figure style="display: flex; flex-direction: column; align-items: center;">
+                <figcaption style="font-weight: bold; font-size: 1.5em;">Васян </figcaption>
+                <img src="imgs/333.jpg" width="300" height="200">
+            </figure>
+        </main>
+      
+</body>
+</html>

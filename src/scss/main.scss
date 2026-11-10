@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    // Перевір, щоб назва файлу (наприклад bg.jpg) збігалася з твоїм файлом
+    background-image: url('../imgs/111.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
