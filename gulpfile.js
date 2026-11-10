@@ -35,7 +35,7 @@ function scripts() {
 }
 
 function images() {
-    return gulp.src('src/imgs/**/*')
+    return gulp.src('src/imgs/**/*', {encoding: false})
         .pipe(imagemin())
         .pipe(gulp.dest('dist/imgs'));
 }
